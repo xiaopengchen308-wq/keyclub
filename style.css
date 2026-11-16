@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&display=swap');
+
+/* Main Colors */
+:root {
+  --green: #24563f;
+  --light-green: #e4efdf;
+  --dark: #1e2c25;
+  --brown: #76553c;
+  --cream: #f8f9f3;
+}
+
+/* Body */
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  color: var(--dark);
+  background: var(--cream);
+}
+
+/* Links */
+a {
+  color: var(--green);
+}
+
+a:hover {
+  color: #153b29;
+}
+
+/* Navbar */
+.navbar {
+  background: white;
+  border-bottom: 1px solid #e0e8de;
+}
+
+.navbar-brand {
+  color: var(--green);
+  font-weight: 800;
+  font-size: 1.35rem;
+}
+
+.navbar-brand:hover {
+  color: var(--green);
+}
+
+.nav-link {
+  font-weight: 600;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--green) !important;
+}
+
+/* Buttons */
+.btn-green {
+  background: var(--green);
+  color: white;
+  border: 2px solid var(--green);
+  font-weight: 700;
+}
+
+.btn-green:hover {
+  background: #173b2a;
+  border-color: #173b2a;
+  color: white;
+}
+
+.btn-outline-green {
+  border: 2px solid var(--green);
+  color: var(--green);
+  font-weight: 700;
+}
+
+.btn-outline-green:hover {
+  background: var(--green);
+  color: white;
+}
+
+/* Sections */
+.section-pad {
+  padding: 72px 0;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 800;
+}
+
+.eyebrow {
+  color: var(--brown);
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-size: .85rem;
+  font-weight: 800;
+}
+
+/* Homepage Hero */
+.hero {
+  background: linear-gradient(
+    135deg,
+    #e0eedc 0%,
+    #f8f9f3 75%
+  );
+  padding: 90px 0;
+}
+
+.hero h1 {
+  color: var(--green);
+  font-size: clamp(2.7rem, 6vw, 4.7rem);
+  line-height: 1.05;
+}
+
+.lead {
+  font-size: 1.2rem;
+}
+
+/* Kiwi Image */
+.kiwi-art {
+  width: 270px;
+  height: 270px;
+  background: #b7d9a5;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 8rem;
+  margin: 0 auto;
+  box-shadow: 22px 22px 0 #d4e8c8;
+}
+
+/* Cards */
+.info-card {
+  height: 100%;
+  padding: 28px;
+  border: 1px solid #dfebdf;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 6px 22px #183d2720;
+}
+
+.info-card h3 {
+  color: var(--green);
+  font-size: 1.4rem;
+}
+
+.card-icon {
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+/* Highlight Section */
+.highlight {
+  background: var(--green);
+  color: white;
+  border-radius: 24px;
+  padding: 36px;
+}
+
+.highlight h2 {
+  color: white;
+}
+
+.highlight .btn-light {
+  color: var(--green);
+}
+
+/* Page Headers */
+.page-header {
+  background: var(--light-green);
+  padding: 70px 0;
+}
+
+.page-header h1 {
+  color: var(--green);
+}
+
+/* About Page */
+.values-section {
+  background: #eaf2e6;
+}
+
+/* Events Page */
+.small-note {
+  color: #57675a;
+  font-size: .97rem;
+}
+
+/* Tags */
+.tag {
+  display: inline-block;
+  background: #e5f0e1;
+  color: var(--green);
+  padding: 5px 12px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+/* Resources Page */
+.resource-link {
+  display: block;
+  color: var(--green);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.resource-link:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #1d3f2d;
+  color: white;
+  padding: 28px 0;
+}
+
+footer a {
+  color: #d7edd2;
+}
+
+footer a:hover {
+  color: white;
+}
+
+/* Mobile Screen */
+@media (max-width: 767px) {
+  .section-pad {
+    padding: 52px 0;
+  }
+
+  .hero {
+    padding: 65px 0;
+  }
+
+  .kiwi-art {
+    width: 195px;
+    height: 195px;
+    font-size: 6rem;
+    margin-top: 36px;
+  }
+}
